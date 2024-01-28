@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+    /*seletores personalizados
+    #  = id
+    .  = class
+    :: = pseudo-element
+    :  =pseudo-classe
+
+    */
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:active{
+    color: yellow;
+}
+a::before {
+content:'➔' ;
+}
+a::after{
+    content: '⇦	';
+}
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+<li><a href="https://www.youtube.com/@IralbergChess-kb5lt" target="_blank">Canal do youtube</a></li>
+<li><a href="https://www.instagram.com/iralberg_samp/" target="_blank">Instagran</a></li>
+
+
+    </ul>
+</body>
+</html>
