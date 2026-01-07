@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+<h1>testando formulario</h1>
+<form action="cadastro.js" method="get" autocomplete="on">
+<p><label for="user">Nome</label>
+<input type="text" id="user" required autocomplete="name" placeholder="Nome completo" maxlength="30">
+</p>
+<p><label for="media">Media</label>
+<input type="number" id="media" min="0" max="10" required step="0.5" placeholder="0 a 10"></p>
+
+<p>
+<label for="per">Périodo Letivo</label>
+<input type="month" name="per" id="per">
+</p>
+<p><label for="dia">Dia da prova</label>
+<input type="date" name="dia" id="dia" value="07-02-2020">
+</p>
+<p>
+    <label for="hora">Horário da prova</label>
+    <input type="time" name="hora" id="hora">
+</p>
+<p>
+    <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+</p>
+
+</form>
+</body>
+</html>
