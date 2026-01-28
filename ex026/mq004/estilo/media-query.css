@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* Todas as demais Medias */
+/*Typical Device breakpoints
+    Pequenas telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: 768px até 992px
+    desktop: 992px até  1200px
+    Grandes telas: acima de  1200px
+    */
+
+@media print {
+
+    /* Impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+
+    body {
+        background-image: url(../fotos/back-print.jpg);
+        /* Desnecessário*/
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black; 
+    }
+   main{
+        border: 2px solid black;
+        width: 90vw;
+   }
+   main::after{
+    content: 'Essa Impressão foi feita do site www.cursoemvidio.com';
+    text-decoration: overline;
+   }
+   
+    #phone{display: none;}
+    #print{display: block;}
+    #tablet{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+    /* Tablet */
+    body {
+        background-image: url(../fotos/back-tablet.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    /* DESKTOP */
+    body {
+        background-image: url(../fotos/back-pc.jpg);
+
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+
+    #tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    /* Tela Grande */
+    body {
+        background-image: url(../fotos/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: none;
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
