@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            display: flex;
+         
+           
+            flex-flow: row wrap;
+            background-color: aqua;
+            
+        }
+
+        .itens {
+           
+            text-align: center;
+            flex: 1 1 200px;
+            height: 300px;
+            background-position: center center;
+            background-size: cover;
+
+        }
+
+        #fot1 {
+            background-image: url('flamengo.jpg');
+
+        }
+
+        #fot2 {
+            background-image: url(palmeiras.png);
+        }
+
+        #fot3 {
+            background-image: url(corinthians.webp);
+        }
+
+        #fot4 {
+            background-color: rgba(0, 0, 0, 0.904);
+            background-image: url(saoPaulo.png);
+            align-self: flex-start;
+            flex: 0 1 300px;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Testando flex box</h1>
+    <h2><a href="index.html">Voltar</a></h2>
+    
+    <h2>Maiores times Brasileiros</h2>
+    <main>
+        <div class="itens" id="fot1">Flamengo</div>
+        <div class="itens" id="fot2">Palmeiras</div>
+        <div class="itens" id="fot3">Corinthians</div>
+        <div class="itens" id="fot4">São Paulo</div>
+    </main>
+</body>
+
+</html>
