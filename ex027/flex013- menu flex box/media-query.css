@@ -1,0 +1,16 @@
+/*Typical Device breakpoints
+    Pequenas telas: até 600px
+    Celular: de 600px até 768px
+    Tablet: 768px até 992px
+    desktop: 992px até  1200px
+    Grandes telas: acima de  1200px
+*/
+header,nav{
+    flex-flow: column nowrap;
+}
+header > h1{
+    flex-basis: 50px;
+}
+nav > a{
+    width: 90vw;
+}
