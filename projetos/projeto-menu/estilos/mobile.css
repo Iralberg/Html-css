@@ -1,0 +1,33 @@
+@charset "UTF-8";
+nav,header{
+ flex-flow: column nowrap;
+ text-align: center;
+
+}
+header > h1{
+    flex:0 1 50px;
+}
+nav > a{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    align-content: space-evenly;
+}
+#menu{
+    cursor: pointer;
+    display: block;
+    background-color: #0044b3;
+    width: 100vw;
+    font-size: 30px;
+}
+#menu:hover{
+    background-color: aqua;
+}
+nav{
+    display: none;
+}
+.hide{
+    display: flex;
+}
