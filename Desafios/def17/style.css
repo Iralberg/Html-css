@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.container{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 40px 1fr 40px;
+    justify-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 5px;
+}
+header{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+.menu{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+.caixa1{
+    grid-area: 3/1/4/2;
+}
+.caixa2{
+grid-area: 3/2/4/-1;
+}
+footer{
+    grid-area: -2/1/-1/-1;
+}
